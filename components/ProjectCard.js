@@ -24,7 +24,7 @@ export default function ProjectCard({ project }) {
           ))}
         </div>
         <a href={project.link} className={styles.projectLink}>
-          View Project1
+          View Project
         </a>
       </div>
     </div>
