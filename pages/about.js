@@ -16,7 +16,7 @@ export default function About() {
         <h1>About Me</h1>
 
         <section className={styles.section}>
-          <h2>Skillss</h2>
+          <h2>Skills</h2>
           <ul className={styles.skillsList}>
             <li>JavaScript (ES6+)</li>
             <li>React.js</li>
