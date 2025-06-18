@@ -1,0 +1,104 @@
+.projects {
+  padding: 4rem 0;
+}
+
+.projectsHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.projectsHeader p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--light-text);
+}
+
+.filterButtons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.filterBtn {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filterBtn:hover {
+  background-color: var(--card-bg);
+}
+
+.filterBtn.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.projectsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.projectModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.projectModal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modalContent {
+  background-color: var(--background);
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  border-radius: 0.5rem;
+  overflow-y: auto;
+  padding: 2rem;
+  position: relative;
+}
+
+.closeModal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--light-text);
+}
+
+.modalImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.modalLinks {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
