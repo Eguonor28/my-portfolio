@@ -3,7 +3,7 @@ import Image from "next/image";
 import ProjectCard from "../components/ProjectCard";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import styles from "../styles/Projects.module.css";
+import styles from "../styles/Project.module.css";
 
 export default function Projects() {
   const projects = [
